@@ -26,13 +26,13 @@ class Home extends React.Component {
     const { isLoading, movies } = this.state;
     return (
       <div>
-        <section class="container">
+        <section className="container">
           {isLoading ? (
-            <div class="loader">
-              <span class="loader__text">"로딩중..."</span>
+            <div className="loader">
+              <span className="loader__text">"로딩중..."</span>
             </div>
           ) : (
-            <div class="movies">
+            <div className="movies">
               {movies.map(movie => (
                 <Movie 
                 key={movie.id} 
